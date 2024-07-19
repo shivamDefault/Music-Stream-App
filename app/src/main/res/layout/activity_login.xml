@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/explore_latest_hits_only_on_su_shi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Email or Phone EditText -->
+        <EditText
+            android:id="@+id/emailPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone"
+            android:textColorHint="@color/black"
+            android:padding="16dp"
+            android:inputType="text"
+            android:background="@drawable/rounded_corner"/>
+
+        <!-- Separator View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_corner"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:indeterminateTint="@color/white"/>
+
+        <!-- Sign Up Link -->
+        <TextView
+            android:id="@+id/gotoSignupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_an_account"
+            android:textColor="@color/textWhite"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</LinearLayout>

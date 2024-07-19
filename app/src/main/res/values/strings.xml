@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Music Stream</string>
+    <string name="english">English</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="explore_latest_hits_only_on_su_shi">Explore latest hits only on Su-Shi</string>
+    <string name="email_address">Email address</string>
+    <string name="password">password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="Login_account" />
+    <string name="dont_have_an_account">dont have an account?</string>
+    <string name="don_t_have_an_account">don\'t_have_an_account</string>
+    <string name="phone_number" />
+    <string name="login" />
+</resources>
